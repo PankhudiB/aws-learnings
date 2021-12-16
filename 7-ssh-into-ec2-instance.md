@@ -13,4 +13,17 @@ ssh into EC2 instance
 --------------
 
 EC2 instance Connect -> browser based (behind the scenes - its ssh) 
+
     -> still needs the Security Group open for port 22 
+    -> comes with aws-cli
+    -> will need to do aws configure 
+        -> BAD idea -> bcoz if u put your personal creds there
+            -> then anyone else in our account can connect to our EC2 instance using EC2 connect
+                -> & retrive our access id & secret key
+
+    -> instead we should use IAM role
+        -> attach an IAM role to the EC2 instance 
+        -> then u dont need to do aws configure
+    
+    
+
