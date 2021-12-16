@@ -9,3 +9,8 @@ ssh into EC2 instance
    
 
 3. chmod 400 .pem file. ``` 400 protects it by making it read only and only for the owner.```
+
+--------------
+
+EC2 instance Connect -> browser based (behind the scenes - its ssh) 
+    -> still needs the Security Group open for port 22 
